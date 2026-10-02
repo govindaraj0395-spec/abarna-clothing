@@ -1,0 +1,597 @@
+/* =========================================
+   ABARNA CLOTHING - GLOBAL CSS
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  background: #faf8f5;
+
+  color: #2b2521;
+}
+
+button {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #faf8f5;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eee6df;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+  border: none;
+
+  background: transparent;
+
+  color: #2b2521;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  letter-spacing: 6px;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.logo:hover {
+  color: #a66b4f;
+}
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.nav-links button {
+  border: none;
+
+  background: transparent;
+
+  color: #403832;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  padding: 8px 0;
+
+  transition: 0.25s;
+}
+
+.nav-links button:hover {
+  color: #a66b4f;
+}
+
+/* =========================================
+   NAV ACTIONS
+========================================= */
+
+.nav-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* =========================================
+   ICON BUTTON
+========================================= */
+
+.nav-icon {
+  position: relative;
+
+  border: none;
+
+  background: transparent;
+
+  color: #403832;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  padding: 8px;
+
+  line-height: 1;
+
+  transition: 0.25s;
+}
+
+.nav-icon:hover {
+  color: #a66b4f;
+}
+
+/* =========================================
+   NAV COUNT
+========================================= */
+
+.nav-count {
+  position: absolute;
+
+  top: -2px;
+
+  right: -3px;
+
+  min-width: 16px;
+
+  height: 16px;
+
+  padding: 0 4px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #a66b4f;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: bold;
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-nav-btn {
+  border: 1px solid #3d3530;
+
+  background: #3d3530;
+
+  color: #ffffff;
+
+  padding: 10px 19px;
+
+  border-radius: 2px;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.login-nav-btn:hover {
+  background: #a66b4f;
+
+  border-color: #a66b4f;
+}
+
+/* =========================================
+   USER MENU
+========================================= */
+
+.user-menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.user-name {
+  color: #403832;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+.logout-btn {
+  border: 1px solid #3d3530;
+
+  background: transparent;
+
+  color: #3d3530;
+
+  padding: 8px 14px;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.logout-btn:hover {
+  background: #3d3530;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  min-height: 620px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(250, 248, 245, 0.72),
+      rgba(250, 248, 245, 0.72)
+    ),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=80");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 720px;
+
+  padding: 40px 20px;
+}
+
+.hero-small {
+  margin-bottom: 20px;
+
+  color: #a66b4f;
+
+  font-size: 13px;
+
+  letter-spacing: 4px;
+}
+
+.hero h1 {
+  margin-bottom: 25px;
+
+  color: #2b2521;
+
+  font-size: 64px;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+}
+
+.hero-description {
+  margin-bottom: 30px;
+
+  color: #625a54;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.hero-btn {
+  border: none;
+
+  background: #3d3530;
+
+  color: #ffffff;
+
+  padding: 14px 28px;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.hero-btn:hover {
+  background: #a66b4f;
+}
+
+/* =========================================
+   HOME SECTION
+========================================= */
+
+.home-section {
+  padding: 90px 7%;
+
+  text-align: center;
+
+  background: #ffffff;
+}
+
+.section-label {
+  margin-bottom: 15px;
+
+  color: #a66b4f;
+
+  font-size: 13px;
+
+  letter-spacing: 3px;
+}
+
+.home-section h2 {
+  margin-bottom: 15px;
+
+  color: #2b2521;
+
+  font-size: 38px;
+
+  font-weight: 500;
+}
+
+.home-section > p:not(.section-label) {
+  margin-bottom: 25px;
+
+  color: #665e58;
+
+  font-size: 16px;
+}
+
+/* =========================================
+   SIMPLE PAGE
+========================================= */
+
+.simple-page {
+  min-height: calc(100vh - 80px);
+
+  padding: 120px 7%;
+
+  text-align: center;
+
+  background: #faf8f5;
+}
+
+.simple-page h1 {
+  margin-bottom: 20px;
+
+  color: #2b2521;
+
+  font-size: 48px;
+
+  font-weight: 500;
+}
+
+.simple-page p:not(.section-label) {
+  margin-bottom: 20px;
+
+  color: #665e58;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-links button {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .navbar {
+    height: auto;
+
+    min-height: 75px;
+
+    padding: 15px 5%;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .nav-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    overflow-x: auto;
+  }
+
+  .nav-links button {
+    white-space: nowrap;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .home-section {
+    padding: 65px 5%;
+  }
+
+  .home-section h2 {
+    font-size: 32px;
+  }
+
+  .simple-page {
+    padding: 80px 5%;
+  }
+
+  .simple-page h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .nav-actions {
+    gap: 3px;
+  }
+
+  .nav-icon {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .login-nav-btn {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links button {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-small {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+}
+
+/* =========================
+   MY ORDERS NAV BUTTON
+========================= */
+
+.orders-nav-btn {
+  border: 1px solid #b08d57;
+  background: transparent;
+  color: #8b6b3f;
+  padding: 9px 14px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orders-nav-btn:hover {
+  background: #8b6b3f;
+  color: white;
+}
+
+.address-nav-btn {
+  border: 1px solid #b08d57;
+  background: transparent;
+  color: #8b6b3f;
+  padding: 9px 14px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.address-nav-btn:hover {
+  background: #8b6b3f;
+  color: white;
+}
